@@ -18,8 +18,8 @@ def readLip(filename):
     audioFile = filename[:-4] + ".wav"
     my_clip.audio.write_audiofile(audioFile)
 
-    tokenizer = Wav2Vec2Tokenizer.from_pretrained('./preTrainedWeithts' ) # use_auth_token=True
-    model = Wav2Vec2ForCTC.from_pretrained("./preTrainedWeithts")
+    tokenizer = Wav2Vec2Tokenizer.from_pretrained('preTrainedWeithts' ) # use_auth_token=True
+    model = Wav2Vec2ForCTC.from_pretrained("preTrainedWeithts")
 
     print("\n\n", audioFile, "\n\n")
 
